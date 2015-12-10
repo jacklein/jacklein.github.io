@@ -1,0 +1,262 @@
+html{
+  min-height:100%;
+  position:relative;
+}
+
+body{
+  /*font-family: 'Noto Serif', serif !important;*/
+  font-family: 'Roboto Condensed', sans-serif;
+  width:auto;
+  max-width: 700px;
+  margin: 0 auto !important;
+  float: none !important;
+}
+
+.nav {
+  padding-top:30px;
+  font-weight: 700;
+  border-bottom: none;
+  margin-left:-15px;
+  /*padding-left:-10px;*/
+}
+
+.nav a{
+  color:black;
+  border:none;
+  background:white !important;
+  text-decoration:none;
+  float:left;
+}
+
+.nav .active{
+  /* Safari */
+  -webkit-transform: rotate(-180deg);
+
+  /* Firefox */
+  -moz-transform: rotate(-180deg);
+
+  /* IE */
+  -ms-transform: rotate(-180deg);
+
+  /* Opera */
+  -o-transform: rotate(-180deg);
+}
+
+.footer {
+  position: absolute;
+  max-width:100%;
+  /* Set the fixed height of the footer here */
+  height: 100px;
+  background-color: white;
+}
+
+.footy {
+  font-size: .9em;
+  padding-left:0;
+  margin-left:-24px;
+}
+
+li{
+  list-style-type: none;
+}
+
+#content{
+  margin:0;
+  padding:0;
+}
+
+/* about page */
+#about_text{
+  line-height:1.8em;
+}
+#connect h6{
+  margin:0;
+  padding-top:1px;
+}
+
+#connect a{
+  border-bottom: 1px #6cbcff dotted;
+  text-decoration:none;
+  color:#6cbcff;
+}
+
+#connect a,
+#connect h6{
+  line-height:2em;
+}
+
+/* portfolio page */
+#grid{
+  height:100%;
+  padding:0;
+  padding-top:7px;
+}
+.thumbnail {
+  position: relative;
+  border: none;
+  margin:0;
+  padding:0;
+  width:100%;
+}
+
+.thumbnail img{
+  width: 100%;
+}
+
+.thumbnail .caption{
+  padding:0;
+  padding-bottom:12px;
+}
+
+.thumbnail h5{
+  font-weight:700;
+}
+
+.thumbnail img{ /* changes thumbnail from bw to color */
+  -webkit-filter: grayscale(100%);
+  filter: grayscale(100%);
+}
+.thumbnail img:hover{
+  -webkit-filter: grayscale(0);
+  filter: grayscale(0);
+  /*transform: scale(1.01);*/
+}
+/* project page */
+.wide-highlight{
+  padding-top: 8px;
+  padding-bottom: 8px;
+  font-size: 1em;
+  margin-top:7px;
+  margin-bottom:2px;
+  color:white;
+  background:black;
+  text-indent:5px;
+}
+
+.skills{
+  padding-left:0;
+  margin-bottom:-3px;
+}
+
+#creative{
+  padding-top:0px;
+}
+
+#creative,
+#technical{
+  font-weight:700;
+  margin-bottom:0;
+}
+
+.skills li{
+  margin-top:-5px;
+  text-indent:16px;
+}
+
+.overflow{
+  height: 300px;
+  overflow: auto;
+  margin-left:-4px;
+}
+
+.overflow,
+#skills-used{
+  line-height:1.8em;
+}
+
+#bad-hack{ /* makes the skills section have padding on smaller viewports */
+  padding-bottom:20px;
+}
+
+.project_img{
+  padding-top:14px; /* gutters are 14px */
+}
+
+.project_img img{
+  width:100%;
+}
+
+video{
+  width:100%;
+  margin-bottom:-5px;
+}
+
+.two-by-two{ /* for pics like zoe on HG */
+  width:50% !important;
+  float:left;
+  padding-bottom:3px;
+}
+
+#first{
+  padding-right: 7px;
+}
+
+#second{
+  padding-left:7px;
+}
+
+.project_img h6{
+  font-size:.9em;
+  margin:0;
+  padding-left:3px;
+  padding-top:3px;
+  border-left:solid 2px;
+}
+
+.project_img a{
+  color:#6cbcff;
+  text-decoration: none;
+}
+
+#skills-used a{
+  border-bottom: 1px #6cbcff dotted;
+  text-decoration:none;
+  color:#6cbcff;
+}
+
+
+/* for overflow scroll bar */
+#project ::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+#project ::-webkit-scrollbar-track {
+  background-color:#e8e8e8;
+}
+
+/* Handle */
+#project ::-webkit-scrollbar-thumb {
+  background:lightgrey;
+}
+
+.resume{
+  width:100%;
+  overflow:visible;
+}
+/*queries*/
+
+@media (max-width:767px){
+  body{
+    max-width:465px !important;
+  }
+  #connect{
+    padding-top:20px;
+  }
+  .overflow{
+    margin-left:4px;
+  }
+
+}
+
+@media (max-width: 480px) {
+  body{
+    max-width:350px !important;
+  }
+  nav a{
+    margin-right: -2%;
+  }
+  .project_img h6 {
+    font-size: .8em;
+  }
+}
