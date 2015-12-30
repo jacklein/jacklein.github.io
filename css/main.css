@@ -12,8 +12,15 @@ body{
   float: none !important;
 }
 
+/*p::selection{
+  background:red;
+}
+p::-moz-selection{
+  background:red;
+}*/
+
 .nav {
-  padding-top:30px;
+  padding-top: 20px;
   font-weight: 700;
   border-bottom: none;
   margin-left:-15px;
@@ -27,8 +34,29 @@ body{
   text-decoration:none;
   float:left;
 }
+.footer {
+  position: absolute;
+  max-width:100%;
+  /* Set the fixed height of the footer here */
+  background-color: white;
+  padding-top:90px;
+  margin-bottom:70px;
+  font-size:.85em;
+}
 
-.nav .active{
+.footy {
+  font-size: .9em;
+  padding-left:0;
+  margin-left:-24px;
+}
+.footy a,
+.footy a:hover{
+  color:black;
+  text-decoration: none;
+}
+
+.nav .active,
+.footy .active {
   /* Safari */
   -webkit-transform: rotate(-180deg);
 
@@ -40,20 +68,6 @@ body{
 
   /* Opera */
   -o-transform: rotate(-180deg);
-}
-
-.footer {
-  position: absolute;
-  max-width:100%;
-  /* Set the fixed height of the footer here */
-  height: 100px;
-  background-color: white;
-}
-
-.footy {
-  font-size: .9em;
-  padding-left:0;
-  margin-left:-24px;
 }
 
 li{
@@ -74,7 +88,8 @@ li{
   padding-top:1px;
 }
 
-#connect a{
+#connect a,
+#email{
   border-bottom: 1px #6cbcff dotted;
   text-decoration:none;
   color:#6cbcff;
@@ -133,24 +148,21 @@ li{
   text-indent:5px;
 }
 
-.skills{
+.port-aside{
   padding-left:0;
   margin-bottom:-3px;
 }
 
-#creative{
-  padding-top:0px;
+.port-aside li{
+  margin-top:-5px;
+  text-indent:16px;
 }
 
+#external,
 #creative,
 #technical{
   font-weight:700;
-  margin-bottom:0;
-}
-
-.skills li{
-  margin-top:-5px;
-  text-indent:16px;
+  margin-bottom:0px;
 }
 
 .overflow{
@@ -165,7 +177,7 @@ li{
 }
 
 #bad-hack{ /* makes the skills section have padding on smaller viewports */
-  padding-bottom:20px;
+  padding-bottom:15px;
 }
 
 .project_img{
@@ -214,7 +226,9 @@ video{
   color:#6cbcff;
 }
 
-
+#padding{
+  height:14px;
+}
 /* for overflow scroll bar */
 #project ::-webkit-scrollbar {
   width: 10px;
@@ -232,7 +246,7 @@ video{
 
 .resume{
   width:100%;
-  overflow:visible;
+  height:850px;
 }
 /*queries*/
 
@@ -241,10 +255,10 @@ video{
     max-width:465px !important;
   }
   #connect{
-    padding-top:20px;
+    padding-top:0px; /* i thought i wanted padding but i didnt */
   }
   .overflow{
-    margin-left:4px;
+    margin-left:1px;
   }
 
 }
@@ -258,5 +272,8 @@ video{
   }
   .project_img h6 {
     font-size: .8em;
+  }
+  .thumbnail{
+
   }
 }
