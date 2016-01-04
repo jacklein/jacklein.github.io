@@ -266,6 +266,12 @@ video{
   .overflow{
     margin-left:1px;
   }
+  #top-image-HG{
+    margin-top:0px;
+  }
+  #top-image-quote{
+    margin-top:0px;
+  }
 
 }
 
